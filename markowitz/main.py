@@ -101,7 +101,7 @@ def display_simulated_ef_with_random(mean_returns, cov_matrix, num_portfolios, r
     plt.xlabel('annualised volatility')
     plt.ylabel('annualised returns')
     plt.legend(labelspacing=0.8)
-
+    plt.show()
     display_simulated_ef_with_random(mean_returns, cov_matrix, num_portfolios, risk_free_rate) # Check if needed to remove
 
 def neg_sharpe_ratio(weights, mean_returns, cov_matrix, risk_free_rate):
@@ -197,7 +197,7 @@ def display_calculated_ef_with_random(mean_returns, cov_matrix, num_portfolios, 
     plt.xlabel('annualised volatility')
     plt.ylabel('annualised returns')
     plt.legend(labelspacing=0.8)
-
+    plt.show()
 
 display_calculated_ef_with_random(mean_returns, cov_matrix, num_portfolios, risk_free_rate) # Check to See IF needed to Be moved.    
 
@@ -251,6 +251,6 @@ def display_ef_with_selected(mean_returns, cov_matrix, risk_free_rate):
     ax.set_xlabel('annualised volatility')
     ax.set_ylabel('annualised returns')
     ax.legend(labelspacing=0.8)
-
+    plt.show()
 
 display_ef_with_selected(mean_returns, cov_matrix, risk_free_rate)
