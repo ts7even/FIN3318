@@ -12,7 +12,7 @@ matplotlib.use('Qt5Agg')
 
 
 quandl.ApiConfig.api_key = '-6xwsaECvAD-VoiQxLkA'  
-stocks = ['AAPL','TSLA','FB','MSFT', 'WMT', 'AMZN', 'HD', 'JNJ', 'JPM', 'COP']
+stocks = ['MSCI','CPRT','NVDA','PGR', 'NEE', 'ODFL', 'AMD', 'IDXX', 'BRO', 'PAYC']
 data = quandl.get_table('WIKI/PRICES', ticker = stocks,
                         qopts = { 'columns': ['date', 'ticker', 'adj_close'] },
                         date = { 'gte': '2016-1-1', 'lte': '2020-3-30' }, paginate=True)
